@@ -12,7 +12,6 @@ export const Navigation = () => {
   const navItems = [
     { name: "Product", path: "/product" },
     { name: "Solutions", path: "/solutions" },
-    { name: "Demo", path: "/demo" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -48,12 +47,16 @@ export const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
-              Sign In
-            </Button>
-            <Button size="sm">
-              Request Demo
-            </Button>
+            <Link to="/waitlist">
+              <Button variant="outline" size="sm">
+                Join Waitlist
+              </Button>
+            </Link>
+            <Link to="/request-demo">
+              <Button size="sm">
+                Request Demo
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -82,12 +85,16 @@ export const Navigation = () => {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" size="sm">
-                  Sign In
-                </Button>
-                <Button size="sm">
-                  Request Demo
-                </Button>
+                <Link to="/waitlist">
+                  <Button variant="outline" size="sm" className="w-full">
+                    Join Waitlist
+                  </Button>
+                </Link>
+                <Link to="/request-demo">
+                  <Button size="sm" className="w-full">
+                    Request Demo
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
