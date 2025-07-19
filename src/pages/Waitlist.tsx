@@ -132,7 +132,6 @@ const Waitlist = () => {
         </div>
       </section>
 
-
       <Footer />
     </div>
   );
