@@ -25,7 +25,7 @@ export const Navigation = () => {
             <img 
               src="/lovable-uploads/a5793f89-7177-43bb-870f-4c1b27cbee26.png" 
               alt="Complytics" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
