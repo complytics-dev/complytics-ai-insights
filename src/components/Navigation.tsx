@@ -35,7 +35,7 @@ export const Navigation = () => {
             </Link>
             <Link to="/request-demo">
               <Button size="sm">
-                Request Demo
+                Contact Us
               </Button>
             </Link>
           </div>
@@ -60,7 +60,7 @@ export const Navigation = () => {
                 </Link>
                 <Link to="/request-demo">
                   <Button size="sm" className="w-full">
-                    Request Demo
+                    Contact Us
                   </Button>
                 </Link>
               </div>
