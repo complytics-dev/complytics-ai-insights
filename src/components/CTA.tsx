@@ -1,0 +1,64 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
+
+export const CTA = () => {
+  return (
+    <section className="py-24 bg-gradient-to-br from-primary to-accent relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-8">
+            <Sparkles className="w-4 h-4 mr-2" />
+            Join 500+ companies automating their commissions
+          </div>
+          
+          <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Ready to eliminate
+            <br />
+            commission chaos?
+          </h2>
+          
+          <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-2xl mx-auto">
+            Stop wasting time on manual calculations. Start your free trial today and see why finance teams love Complytics.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-4 h-auto group"
+            >
+              Start Free Trial
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4 h-auto"
+            >
+              Talk to Sales
+            </Button>
+          </div>
+          
+          <div className="flex items-center justify-center gap-8 mt-12 text-white/80 text-sm">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+              14-day free trial
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+              No setup fees
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+              Cancel anytime
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
