@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Dark theme to match logo */
-    --background: 220 25% 3%;
+    --background: 215 28% 7%;
     --foreground: 210 40% 98%;
 
     --card: 215 28% 9%;
@@ -61,7 +61,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 25% 2%;
+    --background: 220 25% 4%;
     --foreground: 210 40% 98%;
 
     --card: 220 25% 6%;
