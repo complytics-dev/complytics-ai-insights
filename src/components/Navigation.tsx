@@ -7,11 +7,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const navItems = [
-    { name: "Product", path: "/product" },
-    { name: "Solutions", path: "/solutions" },
-    { name: "Contact", path: "/contact" },
-  ];
+  const navItems = [];
 
   const isActive = (path: string) => location.pathname === path;
 
