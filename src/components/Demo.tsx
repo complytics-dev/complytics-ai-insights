@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Play, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Demo = () => {
   return (
@@ -48,13 +49,17 @@ export const Demo = () => {
 
           <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="group">
-                Get Started Now
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button variant="outline" size="lg">
-                Schedule a Demo
-              </Button>
+              <Link to="/request-demo">
+                <Button size="lg" className="group">
+                  Get Started Now
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link to="/request-demo">
+                <Button variant="outline" size="lg">
+                  Schedule a Demo
+                </Button>
+              </Link>
             </div>
             
             <p className="text-sm text-muted-foreground mt-6">

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-dashboard.jpg";
 
 export const Hero = () => {
@@ -33,14 +34,18 @@ export const Hero = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="group">
-                  Start Free Trial
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-                <Button variant="outline" size="lg" className="group">
-                  <Play className="mr-2 h-4 w-4" />
-                  Watch Demo
-                </Button>
+                <Link to="/request-demo">
+                  <Button size="lg" className="group">
+                    Start Free Trial
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+                <Link to="/demo">
+                  <Button variant="outline" size="lg" className="group">
+                    <Play className="mr-2 h-4 w-4" />
+                    Watch Demo
+                  </Button>
+                </Link>
               </div>
               
               <div className="flex items-center gap-8 text-sm text-muted-foreground">

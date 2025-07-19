@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Pricing = () => {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -113,14 +114,16 @@ export const Pricing = () => {
                   </span>
                 </div>
                 
-                <Button
-                  className={`w-full ${
-                    plan.popular ? "" : "variant-outline"
-                  }`}
-                  variant={plan.popular ? "default" : "outline"}
-                >
-                  Start Free Trial
-                </Button>
+                <Link to="/request-demo" className="block">
+                  <Button
+                    className={`w-full ${
+                      plan.popular ? "" : "variant-outline"
+                    }`}
+                    variant={plan.popular ? "default" : "outline"}
+                  >
+                    Start Free Trial
+                  </Button>
+                </Link>
               </div>
               
               <div className="space-y-4">
