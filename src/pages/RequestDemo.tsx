@@ -12,10 +12,10 @@ export default function RequestDemo() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Ready to simplify commissions?
+              Get in touch with us
             </h1>
             <p className="text-xl text-muted-foreground">
-              Book a personalized demo to see how Complytics eliminates commission chaos for your team. No sales pitch - just a real walkthrough tailored to your needs.
+              Have questions about Complytics? Want to learn more about how we can help streamline your commission process? We'd love to hear from you.
             </p>
           </div>
 
@@ -70,23 +70,24 @@ export default function RequestDemo() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">Message (Optional)</Label>
+                <Label htmlFor="message">How can we help you? *</Label>
                 <Textarea 
                   id="message" 
-                  placeholder="Tell us about your current commission process and any specific challenges you're facing..."
+                  placeholder="Tell us about your questions, challenges, or what you'd like to learn more about..."
                   rows={4}
+                  required
                 />
               </div>
 
               <Button type="submit" className="w-full group text-lg py-6">
-                Request Demo
+                Send Message
                 <CheckCircle className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
               </Button>
             </form>
 
             <div className="mt-8 p-4 bg-muted/50 rounded-lg">
               <p className="text-sm text-muted-foreground text-center">
-                <span className="font-medium">What to expect:</span> 30-minute personalized demo • See real data flows • Q&A with our team • No sales pressure
+                <span className="font-medium">Quick response guaranteed:</span> We'll get back to you within 24 hours • Direct contact with our team • No automated responses
               </p>
             </div>
           </div>
