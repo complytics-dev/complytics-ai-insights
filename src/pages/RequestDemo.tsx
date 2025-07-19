@@ -1,3 +1,4 @@
+import { Navigation } from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -7,7 +8,9 @@ import { CheckCircle } from "lucide-react";
 
 export default function RequestDemo() {
   return (
-    <div className="min-h-screen bg-background py-20">
+    <div className="min-h-screen">
+      <Navigation />
+      <div className="bg-background py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
@@ -102,6 +105,7 @@ export default function RequestDemo() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
