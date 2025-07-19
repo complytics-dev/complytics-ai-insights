@@ -15,32 +15,40 @@ export const Footer = () => {
             </p>
           </div>
           
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
+          {/* Contact & Social Links */}
+          <div className="flex flex-col items-center gap-4">
             <a 
-              href="#" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              href="/contact" 
+              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
             >
-              <Twitter className="h-5 w-5" />
+              Contact Us
             </a>
-            <a 
-              href="#" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              <Linkedin className="h-5 w-5" />
-            </a>
-            <a 
-              href="#" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            <a 
-              href="#" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-300"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
+            <div className="flex items-center gap-4">
+              <a 
+                href="#" 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a 
+                href="#" 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="#" 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a 
+                href="#" 
+                className="text-muted-foreground hover:text-foreground transition-colors duration-300"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
           </div>
         </div>
         
