@@ -18,7 +18,7 @@ export const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/a5793f89-7177-43bb-870f-4c1b27cbee26.png" 
+              src="/lovable-uploads/b44327b4-db0b-4c72-90c9-a7d0c056fab7.png" 
               alt="Complytics" 
               className="h-12 w-auto"
             />
