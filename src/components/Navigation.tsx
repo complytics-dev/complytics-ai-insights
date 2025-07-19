@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
-const logoUrl = "/lovable-uploads/7347272f-5841-4081-bf2c-b76ed83be915.png";
-
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -23,11 +21,12 @@ export const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-background font-bold text-lg">C</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">Complytics</span>
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/a5793f89-7177-43bb-870f-4c1b27cbee26.png" 
+              alt="Complytics" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
