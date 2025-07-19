@@ -30,16 +30,17 @@ export const Hero = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/request-demo">
-                  <Button size="lg" className="group">
-                    Start Free Trial
+                <Link to="/waitlist">
+                  <Button size="lg" className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-lg">
+                    <Play className="mr-2 h-4 w-4" />
+                    Join Waitlist - Early Access
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
-                <Link to="/waitlist">
+                <Link to="/request-demo">
                   <Button variant="outline" size="lg" className="group">
-                    <Play className="mr-2 h-4 w-4" />
-                    Join Waitlist
+                    Start Free Trial
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
               </div>
