@@ -12,7 +12,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            
+            <img 
+              src="/lovable-uploads/a8acf721-c2ef-4633-b54c-cbd8db01e864.png" 
+              alt="Complytics Logo" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
