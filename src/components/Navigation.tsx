@@ -13,7 +13,7 @@ export const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/a8acf721-c2ef-4633-b54c-cbd8db01e864.png" 
+              src="/lovable-uploads/8812b014-90c3-403e-ad17-889ac7a77595.png" 
               alt="Complytics Logo" 
               className="h-12 w-auto flex items-center"
             />
