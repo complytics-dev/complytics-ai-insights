@@ -13,11 +13,6 @@ export const Features = () => {
       description: "Seamlessly connects with your CRM to pull live revenue data, quotas, and deal information automatically."
     },
     {
-      icon: Calculator,
-      title: "Automated Calculations",
-      description: "Generates accurate commission payouts instantly, eliminating manual spreadsheet errors and saving hours of work."
-    },
-    {
       icon: BarChart3,
       title: "Intuitive Dashboards",
       description: "Clean, visual reports that sales reps and finance teams actually want to use, with drill-down capabilities."
