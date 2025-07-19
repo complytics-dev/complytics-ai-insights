@@ -14,10 +14,7 @@ export const Hero = () => {
             {/* Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                  <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
-                  AI-Powered Commission Tracking
-                </div>
+                
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
                   Automate Your{" "}
@@ -38,27 +35,11 @@ export const Hero = () => {
                   </Button>
                 </Link>
                 <Link to="/request-demo">
-                  <Button variant="outline" size="lg" className="group">
-                    Start Free Trial
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                  
                 </Link>
               </div>
               
-              <div className="flex items-center gap-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  No credit card required
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  Setup in minutes
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  Cancel anytime
-                </div>
-              </div>
+              
             </div>
             
             {/* Product mockup */}
