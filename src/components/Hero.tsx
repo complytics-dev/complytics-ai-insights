@@ -2,10 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-dashboard.jpg";
-
 export const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-radial from-primary/10 to-transparent rounded-full blur-3xl"></div>
@@ -28,9 +26,7 @@ export const Hero = () => {
                   </span>
                 </h1>
                 
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  Eliminate spreadsheet chaos and manual errors. Complytics uses AI to parse complex compensation plans, sync real-time Salesforce data, and generate accurate payout reports automatically.
-                </p>
+                <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">Eliminate spreadsheet chaos and manual errors. Complytics uses AI to parse complex compensation plans, sync real-time Salesforce data, and generate accurate payout reports within seconds.</p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -67,11 +63,7 @@ export const Hero = () => {
             {/* Product mockup */}
             <div className="relative">
               <div className="relative z-10 transform lg:scale-110">
-                <img 
-                  src={heroImage} 
-                  alt="Complytics Dashboard" 
-                  className="w-full h-auto rounded-2xl shadow-hero border border-border/20"
-                />
+                <img src={heroImage} alt="Complytics Dashboard" className="w-full h-auto rounded-2xl shadow-hero border border-border/20" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
               </div>
               
@@ -82,6 +74,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
