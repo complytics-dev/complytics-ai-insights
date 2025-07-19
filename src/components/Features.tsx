@@ -23,11 +23,6 @@ export const Features = () => {
       description: "Clean, visual reports that sales reps and finance teams actually want to use, with drill-down capabilities."
     },
     {
-      icon: Shield,
-      title: "Audit Trail & Compliance",
-      description: "Complete transparency with detailed audit logs, ensuring compliance and building trust across your organization."
-    },
-    {
       icon: Zap,
       title: "Fast Implementation",
       description: "Get up and running in minutes, not months. No complex enterprise setup or lengthy onboarding required."
