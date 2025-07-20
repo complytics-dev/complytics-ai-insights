@@ -7,16 +7,31 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, Shield, Users, Zap, TrendingUp } from 'lucide-react';
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
+import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 const Waitlist = () => {
-  const [email, setEmail] = useState('');
+  const [formData, setFormData] = useState({
+    firstName: '',
+    email: '',
+    company: '',
+    salesReps: '',
+    role: '',
+    crm: ''
+  });
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
+    if (formData.email && formData.firstName && formData.company) {
       setIsSubmitted(true);
     }
   };
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
   if (isSubmitted) {
     return <div className="min-h-screen bg-background">
         <Navigation />
@@ -70,8 +85,79 @@ const Waitlist = () => {
                     </p>
                   </div>
                   
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="firstName">Full Name *</Label>
+                        <Input 
+                          id="firstName" 
+                          placeholder="John Doe" 
+                          value={formData.firstName}
+                          onChange={(e) => handleInputChange('firstName', e.target.value)}
+                          required 
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email">Work Email *</Label>
+                        <Input 
+                          id="email" 
+                          type="email" 
+                          placeholder="john@company.com" 
+                          value={formData.email}
+                          onChange={(e) => handleInputChange('email', e.target.value)}
+                          required 
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="company">Company Name *</Label>
+                        <Input 
+                          id="company" 
+                          placeholder="Your Company" 
+                          value={formData.company}
+                          onChange={(e) => handleInputChange('company', e.target.value)}
+                          required 
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="salesReps">Number of Sales Reps</Label>
+                        <Select value={formData.salesReps} onValueChange={(value) => handleInputChange('salesReps', value)}>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select range" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="1-10">1-10 reps</SelectItem>
+                            <SelectItem value="11-50">11-50 reps</SelectItem>
+                            <SelectItem value="51-100">51-100 reps</SelectItem>
+                            <SelectItem value="100+">100+ reps</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label htmlFor="role">Your Role</Label>
+                        <Input 
+                          id="role" 
+                          placeholder="e.g. Finance Leader, RevOps, Sales Leader" 
+                          value={formData.role}
+                          onChange={(e) => handleInputChange('role', e.target.value)}
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="crm">Primary CRM</Label>
+                        <Input 
+                          id="crm" 
+                          placeholder="e.g. Salesforce, HubSpot, Pipedrive" 
+                          value={formData.crm}
+                          onChange={(e) => handleInputChange('crm', e.target.value)}
+                        />
+                      </div>
+                    </div>
+
                     <Button type="submit" className="w-full h-12 font-semibold text-lg">
                       Reserve My Spot
                     </Button>
