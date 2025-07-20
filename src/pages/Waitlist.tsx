@@ -38,14 +38,14 @@ const Waitlist = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-8">
+      <section className="pt-20 pb-4">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
             End commission confusion.
             <span className="text-primary block">Start commission clarity.</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             Join the waitlist for Complytics, the AI-powered platform that eliminates manual 
             spreadsheets and delivers transparent, accurate commission reports for every sales rep.
           </p>
@@ -53,21 +53,21 @@ const Waitlist = () => {
       </section>
 
       {/* Waitlist Form */}
-      <section className="pb-16">
+      <section className="pb-8">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="max-w-xl mx-auto mb-16">
+          <div className="max-w-xl mx-auto mb-8">
             <Card className="bg-card border-border">
-              <CardContent className="p-8">
-                <div className="text-center mb-6">
-                  <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
-                  <p className="text-muted-foreground">
+              <CardContent className="p-6">
+                <div className="text-center mb-4">
+                  <h2 className="text-xl font-bold mb-2">Join the Waitlist</h2>
+                  <p className="text-sm text-muted-foreground">
                     Get early access, priority onboarding, and exclusive updates.
                   </p>
                 </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
-                  <Button type="submit" className="w-full h-12 text-lg font-semibold">
+                <form onSubmit={handleSubmit} className="space-y-3">
+                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-10" />
+                  <Button type="submit" className="w-full h-10 font-semibold">
                     Reserve My Spot
                   </Button>
                 </form>
