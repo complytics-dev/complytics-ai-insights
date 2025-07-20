@@ -14,16 +14,12 @@ export const Hero = () => {
             {/* Content */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                  <span className="w-2 h-2 bg-primary rounded-full mr-2 animate-pulse"></span>
-                  AI-Powered Commission Tracking
-                </div>
+                
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
-                  Automate Your{" "}
-                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                    Sales Commissions
-                  </span>
+                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>AI-Powered</span>{" "}
+                  <span className="text-white">Automated Sales</span>{" "}
+                  <span className="text-white">Commissions</span>
                 </h1>
                 
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">Eliminate spreadsheet chaos and manual errors. Complytics uses AI to parse complex compensation plans, sync real-time Salesforce data, and generate accurate payout reports within seconds.</p>
@@ -33,32 +29,16 @@ export const Hero = () => {
                 <Link to="/waitlist">
                   <Button size="lg" className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-lg">
                     <Play className="mr-2 h-4 w-4" />
-                    Join Waitlist - Early Access
+                    Reserve Your Spot Today
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
                 <Link to="/request-demo">
-                  <Button variant="outline" size="lg" className="group">
-                    Start Free Trial
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                  
                 </Link>
               </div>
               
-              <div className="flex items-center gap-8 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  No credit card required
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  Setup in minutes
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  Cancel anytime
-                </div>
-              </div>
+              
             </div>
             
             {/* Product mockup */}

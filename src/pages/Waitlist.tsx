@@ -6,21 +6,17 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, Shield, Users, Zap, TrendingUp } from 'lucide-react';
-
 const Waitlist = () => {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
       setIsSubmitted(true);
     }
   };
-
   if (isSubmitted) {
-    return (
-      <div className="min-h-screen bg-background">
+    return <div className="min-h-screen bg-background">
         <Navigation />
         <div className="pt-20 pb-16">
           <div className="container mx-auto px-4 max-w-2xl text-center">
@@ -31,42 +27,55 @@ const Waitlist = () => {
                 Thank you for your interest in Complytics. Your spot on the waitlist is reserved, 
                 and you'll be among the first to experience automated commission tracking.
               </p>
-              <Badge variant="secondary" className="px-4 py-2">
-                Early Access Confirmed
-              </Badge>
+              
             </div>
           </div>
         </div>
         <Footer />
-      </div>
-    );
+      </div>;
   }
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16">
+      <section className="pt-20 pb-4">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <Badge variant="secondary" className="mb-6">
-            🚀 Coming Soon
-          </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 mt-4">
             End commission confusion.
             <span className="text-primary block">Start commission clarity.</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join the waitlist for Complytics, the AI-powered platform that eliminates manual 
-            spreadsheets and delivers transparent, accurate commission reports for every sales rep.
-          </p>
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Join the waitlist for Complytics, the AI-powered platform that replaces chaotic spreadsheets with real-time, error-free payouts.</p>
         </div>
       </section>
 
-      {/* Benefits Grid */}
-      <section className="pb-16">
+      {/* Waitlist Form */}
+      <section className="pb-8">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="max-w-xl mx-auto mb-8">
+            <Card className="bg-card border-border">
+              <CardContent className="p-6">
+                <div className="text-center mb-4">
+                  <h2 className="text-xl font-bold mb-2">Join the Waitlist</h2>
+                  <p className="text-sm text-muted-foreground">
+                    Get early access, priority onboarding, and exclusive updates.
+                  </p>
+                </div>
+                
+                <form onSubmit={handleSubmit} className="space-y-3">
+                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-10" />
+                  <Button type="submit" className="w-full h-10 font-semibold">
+                    Reserve My Spot
+                  </Button>
+                </form>
+                
+                
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Benefits Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-card/50 border-border/50">
               <CardContent className="p-6 text-center">
                 <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -97,109 +106,10 @@ const Waitlist = () => {
               </CardContent>
             </Card>
           </div>
-
-          {/* Waitlist Form */}
-          <div className="max-w-xl mx-auto">
-            <Card className="bg-card border-border">
-              <CardContent className="p-8">
-                <div className="text-center mb-6">
-                  <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
-                  <p className="text-muted-foreground">
-                    Get early access, priority onboarding, and exclusive updates.
-                  </p>
-                </div>
-                
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <Input
-                    type="email"
-                    placeholder="Enter your work email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="h-12 text-lg"
-                  />
-                  <Button type="submit" className="w-full h-12 text-lg font-semibold">
-                    Reserve My Spot
-                  </Button>
-                </form>
-                
-                <p className="text-sm text-muted-foreground text-center mt-4">
-                  No spam. Unsubscribe anytime. Your data is secure with us.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="pb-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-3">
-                  <Clock className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-2">When will Complytics launch?</h3>
-                    <p className="text-muted-foreground">
-                      We're targeting Q2 2024 for our beta launch. Waitlist members get first access.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-3">
-                  <Users className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-2">Who is eligible for early access?</h3>
-                    <p className="text-muted-foreground">
-                      B2B SaaS companies with 5+ sales reps using Salesforce for deal tracking.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-3">
-                  <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-2">How do you handle data security?</h3>
-                    <p className="text-muted-foreground">
-                      Enterprise-grade encryption, SOC 2 compliance, and read-only Salesforce access.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-2">What are waitlist benefits?</h3>
-                    <p className="text-muted-foreground">
-                      Early access, priority support, exclusive updates, and potential beta pricing.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Waitlist;
