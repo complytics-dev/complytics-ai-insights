@@ -17,7 +17,7 @@ export const Hero = () => {
                 
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
-                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">AI-Powered</span>{" "}
+                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(59,130,246,0.8)] shadow-[0_0_40px_rgba(59,130,246,0.6)]">AI-Powered</span>{" "}
                   <span className="text-white">Automated Sales</span>{" "}
                   <span className="text-white">Commissions</span>
                 </h1>
