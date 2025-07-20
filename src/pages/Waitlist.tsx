@@ -98,10 +98,10 @@ const Waitlist = () => {
             
             <Card className="bg-card/50 border-border/50">
               <CardContent className="p-6 text-center">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Transparent Reports</h3>
+                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-3">Effortless Scaling</h3>
                 <p className="text-muted-foreground">
-                  Every sales rep sees exactly how their commission is calculated. No more disputes.
+                  Onboard new plans and team members in minutes, not months. Complytics adapts instantly as your company grows—no costly consultants or lengthy implementations required.
                 </p>
               </CardContent>
             </Card>
