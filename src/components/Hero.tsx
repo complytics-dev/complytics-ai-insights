@@ -28,7 +28,7 @@ export const Hero = () => {
                 <Link to="/waitlist">
                   <Button size="lg" className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white shadow-lg">
                     <Play className="mr-2 h-4 w-4" />
-                    Get Early Access – Automate Your Commissions Now
+                    Reserve Your Spot Today
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
