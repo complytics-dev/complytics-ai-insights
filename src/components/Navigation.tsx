@@ -33,7 +33,7 @@ export const Navigation = () => {
                 Join Waitlist
               </Button>
             </Link>
-            <Link to="/request-demo">
+            <Link to="/contact-us">
               <Button size="lg">
                 Contact Us
               </Button>
@@ -58,7 +58,7 @@ export const Navigation = () => {
                     Join Waitlist
                   </Button>
                 </Link>
-                <Link to="/request-demo">
+                <Link to="/contact-us">
                   <Button size="lg" className="w-full">
                     Contact Us
                   </Button>

@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle } from "lucide-react";
-export default function RequestDemo() {
+export default function ContactUs() {
   return <div className="min-h-screen">
       <Navigation />
       <div className="bg-background pt-24 pb-10">

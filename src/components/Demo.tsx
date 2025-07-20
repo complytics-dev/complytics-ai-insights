@@ -49,13 +49,13 @@ export const Demo = () => {
 
           <div className="text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/request-demo">
+              <Link to="/contact-us">
                 <Button size="lg" className="group">
                   Get Started Now
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link to="/request-demo">
+              <Link to="/contact-us">
                 <Button variant="outline" size="lg">
                   Schedule a Demo
                 </Button>
