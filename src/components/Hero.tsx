@@ -17,7 +17,6 @@ export const Hero = () => {
                 
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
-                  Eliminate Spreadsheet Chaos:{" "}
                   <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">AI-Powered Sales Commission Automation</span>
                 </h1>
                 
