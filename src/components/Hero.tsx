@@ -44,7 +44,7 @@ export const Hero = () => {
             {/* Product mockup */}
             <div className="relative">
               <div className="relative z-10 transform lg:scale-110">
-                <img src={heroImage} alt="Complytics Dashboard" className="w-full h-auto rounded-2xl shadow-hero border border-border/20" loading="eager" />
+                <img src={heroImage} alt="Complytics Dashboard" className="w-full h-auto rounded-2xl shadow-hero border border-border/20" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
               </div>
               
