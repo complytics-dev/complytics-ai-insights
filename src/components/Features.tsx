@@ -32,7 +32,7 @@ export const Features = () => {
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Everything you need to{" "}
-            <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>
               streamline commissions
             </span>
           </h2>
