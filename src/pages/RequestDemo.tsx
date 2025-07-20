@@ -9,10 +9,10 @@ import { CheckCircle } from "lucide-react";
 export default function RequestDemo() {
   return <div className="min-h-screen">
       <Navigation />
-      <div className="bg-background py-8">
+      <div className="bg-background py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-6">
+          <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Get in touch with us
             </h1>
@@ -21,8 +21,8 @@ export default function RequestDemo() {
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl p-6 border border-border/50">
-            <form className="space-y-4">
+          <div className="bg-card rounded-2xl p-8 border border-border/50">
+            <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">Full Name *</Label>
@@ -76,7 +76,7 @@ export default function RequestDemo() {
                 <Textarea id="message" placeholder="Tell us about your questions, challenges, or what you'd like to learn more about..." rows={4} required />
               </div>
 
-              <Button type="submit" className="w-full group text-lg py-3">
+              <Button type="submit" className="w-full group text-lg py-6">
                 Send Message
                 <CheckCircle className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
               </Button>
@@ -85,7 +85,7 @@ export default function RequestDemo() {
             
           </div>
 
-          <div className="text-center mt-4">
+          <div className="text-center mt-8">
             <p className="text-muted-foreground">
               Prefer to email us? Reach out at{" "}
               <a href="mailto:hello@complytics.com" className="text-primary hover:underline">
