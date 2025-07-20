@@ -64,7 +64,7 @@ const Waitlist = () => {
                 
                 <form onSubmit={handleSubmit} className="space-y-3">
                   <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-10" />
-                  <Button type="submit" className="w-full h-10 font-semibold">
+                  <Button type="submit" className="w-full h-10 font-semibold text-lg">
                     Reserve My Spot
                   </Button>
                 </form>
