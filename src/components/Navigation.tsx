@@ -9,7 +9,7 @@ export const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
@@ -29,12 +29,12 @@ export const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/waitlist">
-              <Button variant="outline">
+              <Button variant="outline" size="lg">
                 Join Waitlist
               </Button>
             </Link>
             <Link to="/request-demo">
-              <Button>
+              <Button size="lg">
                 Contact Us
               </Button>
             </Link>
@@ -54,12 +54,12 @@ export const Navigation = () => {
                 </Link>)}
               <div className="flex flex-col space-y-2 pt-4">
                 <Link to="/waitlist">
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" size="lg" className="w-full">
                     Join Waitlist
                   </Button>
                 </Link>
                 <Link to="/request-demo">
-                  <Button className="w-full">
+                  <Button size="lg" className="w-full">
                     Contact Us
                   </Button>
                 </Link>
