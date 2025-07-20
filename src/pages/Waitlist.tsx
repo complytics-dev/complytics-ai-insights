@@ -20,7 +20,7 @@ const Waitlist = () => {
         <Navigation />
         <div className="pt-20 pb-16">
           <div className="container mx-auto px-4 max-w-2xl text-center">
-            <div className="bg-primary/10 p-8 rounded-2xl border border-primary/20">
+            <div className="bg-primary/10 p-8 rounded-2xl border border-primary/20 mt-8">
               <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
               <h1 className="text-3xl font-bold mb-4">Welcome to the waitlist!</h1>
               <p className="text-muted-foreground mb-6">
