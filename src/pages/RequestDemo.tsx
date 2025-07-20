@@ -14,9 +14,9 @@ export default function RequestDemo() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Get in touch with us
+              Contact Us
             </h1>
-            <p className="text-xl text-muted-foreground">Have questions about Complytics? Connect with us and see how effortless compensation management can be.</p>
+            <p className="text-xl text-muted-foreground">Have questions about Complytics? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
           </div>
 
           <div className="bg-card rounded-2xl p-8 border border-border/50">
