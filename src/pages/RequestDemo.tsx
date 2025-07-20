@@ -9,21 +9,21 @@ import { CheckCircle } from "lucide-react";
 export default function RequestDemo() {
   return <div className="min-h-screen">
       <Navigation />
-      <div className="bg-background py-12">
+      <div className="bg-background py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Get in touch with us
             </h1>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-xl text-muted-foreground">
               Have questions about Complytics? Want to learn more about how we can help streamline your commission process? We'd love to hear from you.
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl p-6 border border-border/50">
-            <form className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-card rounded-2xl p-8 border border-border/50">
+            <form className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">Full Name *</Label>
                   <Input id="firstName" placeholder="John Doe" required />
@@ -34,7 +34,7 @@ export default function RequestDemo() {
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="company">Company Name *</Label>
                   <Input id="company" placeholder="Your Company" required />
@@ -73,10 +73,10 @@ export default function RequestDemo() {
 
               <div className="space-y-2">
                 <Label htmlFor="message">How can we help you? *</Label>
-                <Textarea id="message" placeholder="Tell us about your questions, challenges, or what you'd like to learn more about..." rows={3} required />
+                <Textarea id="message" placeholder="Tell us about your questions, challenges, or what you'd like to learn more about..." rows={4} required />
               </div>
 
-              <Button type="submit" className="w-full group py-3">
+              <Button type="submit" className="w-full group text-lg py-6">
                 Send Message
                 <CheckCircle className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
               </Button>
@@ -85,7 +85,7 @@ export default function RequestDemo() {
             
           </div>
 
-          <div className="text-center mt-6">
+          <div className="text-center mt-8">
             <p className="text-muted-foreground">
               Prefer to email us? Reach out at{" "}
               <a href="mailto:hello@complytics.com" className="text-primary hover:underline">
