@@ -75,8 +75,8 @@ export default function ContactUs() {
           <div className="text-center mt-6">
             <p className="text-muted-foreground">
               Prefer to email us? Reach out at{" "}
-              <a href="mailto:hello@complytics.com" className="text-primary hover:underline">
-                hello@complytics.com
+              <a href="mailto:complyticsadmin@complytics.cloud" className="text-primary hover:underline">
+                complyticsadmin@complytics.cloud
               </a>
             </p>
           </div>
