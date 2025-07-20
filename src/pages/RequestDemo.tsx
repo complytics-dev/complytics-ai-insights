@@ -9,7 +9,7 @@ import { CheckCircle } from "lucide-react";
 export default function RequestDemo() {
   return <div className="min-h-screen">
       <Navigation />
-      <div className="bg-background py-20">
+      <div className="bg-background pt-24 pb-20">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
@@ -85,7 +85,7 @@ export default function RequestDemo() {
             
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-6">
             <p className="text-muted-foreground">
               Prefer to email us? Reach out at{" "}
               <a href="mailto:hello@complytics.com" className="text-primary hover:underline">
