@@ -27,9 +27,7 @@ const Waitlist = () => {
                 Thank you for your interest in Complytics. Your spot on the waitlist is reserved, 
                 and you'll be among the first to experience automated commission tracking.
               </p>
-              <Badge variant="secondary" className="px-4 py-2">
-                Early Access Confirmed
-              </Badge>
+              
             </div>
           </div>
         </div>
