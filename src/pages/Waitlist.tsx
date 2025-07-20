@@ -6,21 +6,17 @@ import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, Shield, Users, Zap, TrendingUp } from 'lucide-react';
-
 const Waitlist = () => {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
       setIsSubmitted(true);
     }
   };
-
   if (isSubmitted) {
-    return (
-      <div className="min-h-screen bg-background">
+    return <div className="min-h-screen bg-background">
         <Navigation />
         <div className="pt-20 pb-16">
           <div className="container mx-auto px-4 max-w-2xl text-center">
@@ -38,20 +34,15 @@ const Waitlist = () => {
           </div>
         </div>
         <Footer />
-      </div>
-    );
+      </div>;
   }
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
       <section className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <Badge variant="secondary" className="mb-6">
-            🚀 Coming Soon
-          </Badge>
+          
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             End commission confusion.
             <span className="text-primary block">Start commission clarity.</span>
@@ -110,14 +101,7 @@ const Waitlist = () => {
                 </div>
                 
                 <form onSubmit={handleSubmit} className="space-y-4">
-                  <Input
-                    type="email"
-                    placeholder="Enter your work email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    className="h-12 text-lg"
-                  />
+                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
                   <Button type="submit" className="w-full h-12 text-lg font-semibold">
                     Reserve My Spot
                   </Button>
@@ -133,8 +117,6 @@ const Waitlist = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Waitlist;
