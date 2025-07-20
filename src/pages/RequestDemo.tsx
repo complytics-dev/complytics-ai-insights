@@ -55,18 +55,7 @@ export default function RequestDemo() {
 
               <div className="space-y-2">
                 <Label htmlFor="role">Your Role</Label>
-                <Select>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select your role" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="finance">Finance Leader</SelectItem>
-                    <SelectItem value="revops">RevOps</SelectItem>
-                    <SelectItem value="sales">Sales Leader</SelectItem>
-                    <SelectItem value="founder">Founder/CEO</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
+                <Input id="role" placeholder="e.g. Finance Leader, RevOps, Sales Leader" />
               </div>
 
               <div className="space-y-2">
