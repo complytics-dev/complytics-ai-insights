@@ -3,6 +3,7 @@ import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CheckCircle, Clock, Shield, Users, Zap, TrendingUp } from 'lucide-react';
@@ -62,10 +63,14 @@ const Waitlist = () => {
                   </p>
                 </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
-                  <Button type="submit" className="w-full h-12 font-semibold text-lg">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Work Email *</Label>
+                    <Input id="email" type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required />
+                  </div>
+                  <Button type="submit" className="w-full group text-lg py-6">
                     Reserve My Spot
+                    <CheckCircle className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                   </Button>
                 </form>
                 
