@@ -52,10 +52,33 @@ const Waitlist = () => {
         </div>
       </section>
 
-      {/* Benefits Grid */}
+      {/* Waitlist Form */}
       <section className="pb-16">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="max-w-xl mx-auto mb-16">
+            <Card className="bg-card border-border">
+              <CardContent className="p-8">
+                <div className="text-center mb-6">
+                  <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
+                  <p className="text-muted-foreground">
+                    Get early access, priority onboarding, and exclusive updates.
+                  </p>
+                </div>
+                
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
+                  <Button type="submit" className="w-full h-12 text-lg font-semibold">
+                    Reserve My Spot
+                  </Button>
+                </form>
+                
+                
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Benefits Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="bg-card/50 border-border/50">
               <CardContent className="p-6 text-center">
                 <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -83,29 +106,6 @@ const Waitlist = () => {
                 <p className="text-muted-foreground">
                   Every sales rep sees exactly how their commission is calculated. No more disputes.
                 </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Waitlist Form */}
-          <div className="max-w-xl mx-auto">
-            <Card className="bg-card border-border">
-              <CardContent className="p-8">
-                <div className="text-center mb-6">
-                  <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
-                  <p className="text-muted-foreground">
-                    Get early access, priority onboarding, and exclusive updates.
-                  </p>
-                </div>
-                
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
-                  <Button type="submit" className="w-full h-12 text-lg font-semibold">
-                    Reserve My Spot
-                  </Button>
-                </form>
-                
-                
               </CardContent>
             </Card>
           </div>
