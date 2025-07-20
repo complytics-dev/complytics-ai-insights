@@ -17,7 +17,7 @@ export const Hero = () => {
                 
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
-                  Transform Your Sales Commissions:{" "}
+                  Transform Your Sales Commissions With{" "}
                   <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Real-Time AI Automation</span>
                 </h1>
                 
