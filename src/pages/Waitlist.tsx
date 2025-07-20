@@ -45,7 +45,10 @@ const Waitlist = () => {
             End commission confusion.
             <span className="text-primary block">Start commission clarity.</span>
           </h1>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Join the waitlist for Complytics, the AI-powered platform that replaces chaotic spreadsheets with real-time, error-free payouts.</p>
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Join the waitlist for Complytics, the AI-powered platform that eliminates manual 
+            spreadsheets and delivers transparent, accurate commission reports for every sales rep.
+          </p>
         </div>
       </section>
 

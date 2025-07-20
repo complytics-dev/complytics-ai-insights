@@ -15,7 +15,7 @@ export const Features = () => {
     {
       icon: BarChart3,
       title: "Intuitive Dashboards",
-      description: "Clean, visual reports that executives actually want to use, revealing actionable insights and real-time performance trends."
+      description: "Clean, visual reports that sales reps and finance teams actually want to use, with drill-down capabilities."
     },
     {
       icon: Zap,
@@ -37,7 +37,7 @@ export const Features = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Replace manual commission headaches with intelligent automation. Instantly model plans, validate payouts, and sync data with unmatched speed and accuracy.
+            Replace manual processes with intelligent automation. Built for modern SaaS teams who demand accuracy and efficiency.
           </p>
         </div>
 
@@ -45,10 +45,10 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/20 transition-all duration-300 hover:shadow-feature text-center"
+              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/20 transition-all duration-300 hover:shadow-feature"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl mb-6 group-hover:bg-primary/20 transition-colors duration-300 mx-auto">
+              <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                 <feature.icon className="h-6 w-6 text-primary" />
               </div>
               
