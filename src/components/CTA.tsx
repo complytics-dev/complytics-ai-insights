@@ -14,7 +14,7 @@ export const CTA = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Ready to Get Started?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
             Join early users who are already transforming their workflow with our platform.
           </p>
           <Button asChild size="lg" className="text-lg px-8 py-6">
