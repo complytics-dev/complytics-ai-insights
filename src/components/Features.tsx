@@ -15,7 +15,7 @@ export const Features = () => {
     {
       icon: BarChart3,
       title: "Intuitive Dashboards",
-      description: "Clean, visual reports that executives actually want to use, surfacing actionable insights and real-time performance trends."
+      description: "Clean, visual reports that executives actually want to use, revealing actionable insights and real-time performance trends."
     },
     {
       icon: Zap,
