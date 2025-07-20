@@ -107,9 +107,7 @@ const Waitlist = () => {
                   </Button>
                 </form>
                 
-                <p className="text-sm text-muted-foreground text-center mt-4">
-                  No spam. Unsubscribe anytime. Your data is secure with us.
-                </p>
+                
               </CardContent>
             </Card>
           </div>
