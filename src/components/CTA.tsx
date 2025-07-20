@@ -15,7 +15,7 @@ export const CTA = () => {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of users who are already transforming their workflow with our platform.
+            Join early users who are already transforming their workflow with our platform.
           </p>
           <Button asChild size="lg" className="text-lg px-8 py-6">
             <Link to="/waitlist">
