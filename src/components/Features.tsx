@@ -37,7 +37,7 @@ export const Features = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Replace manual processes with intelligent automation. Built for modern SaaS teams who demand accuracy and efficiency.
+            Replace manual commission headaches with intelligent automation. Instantly model plans, validate payouts, and sync data with unmatched speed and accuracy.
           </p>
         </div>
 
