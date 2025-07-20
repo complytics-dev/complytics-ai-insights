@@ -5,8 +5,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle } from "lucide-react";
+
 export default function RequestDemo() {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       <div className="bg-background py-20">
       <div className="container mx-auto px-6">
@@ -72,7 +74,12 @@ export default function RequestDemo() {
 
               <div className="space-y-2">
                 <Label htmlFor="message">How can we help you? *</Label>
-                <Textarea id="message" placeholder="Tell us about your questions, challenges, or what you'd like to learn more about..." rows={4} required />
+                <Textarea 
+                  id="message" 
+                  placeholder="Tell us about your questions, challenges, or what you'd like to learn more about..."
+                  rows={4}
+                  required
+                />
               </div>
 
               <Button type="submit" className="w-full group text-lg py-6">
@@ -82,7 +89,9 @@ export default function RequestDemo() {
             </form>
 
             <div className="mt-8 p-4 bg-muted/50 rounded-lg">
-              
+              <p className="text-sm text-muted-foreground text-center">
+                <span className="font-medium">Quick response guaranteed:</span> We'll get back to you within 24 hours • Direct contact with our team • No automated responses
+              </p>
             </div>
           </div>
 
@@ -97,5 +106,6 @@ export default function RequestDemo() {
         </div>
       </div>
     </div>
-    </div>;
+    </div>
+  );
 }
