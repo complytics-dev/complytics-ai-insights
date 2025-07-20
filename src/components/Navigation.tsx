@@ -9,13 +9,13 @@ export const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/8812b014-90c3-403e-ad17-889ac7a77595.png" 
+              src="/lovable-uploads/a8acf721-c2ef-4633-b54c-cbd8db01e864.png" 
               alt="Complytics Logo" 
-              className="h-16 w-auto flex items-center"
+              className="h-10 w-auto"
             />
           </Link>
 
@@ -29,13 +29,13 @@ export const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Link to="/waitlist">
-              <Button variant="outline">
+              <Button variant="outline" size="sm">
                 Join Waitlist
               </Button>
             </Link>
             <Link to="/request-demo">
-              <Button>
-                Contact Us
+              <Button size="sm">
+                Request Demo
               </Button>
             </Link>
           </div>
@@ -54,13 +54,13 @@ export const Navigation = () => {
                 </Link>)}
               <div className="flex flex-col space-y-2 pt-4">
                 <Link to="/waitlist">
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" size="sm" className="w-full">
                     Join Waitlist
                   </Button>
                 </Link>
                 <Link to="/request-demo">
-                  <Button className="w-full">
-                    Contact Us
+                  <Button size="sm" className="w-full">
+                    Request Demo
                   </Button>
                 </Link>
               </div>

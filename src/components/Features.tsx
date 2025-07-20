@@ -13,9 +13,19 @@ export const Features = () => {
       description: "Seamlessly connects with your CRM to pull live revenue data, quotas, and deal information automatically."
     },
     {
+      icon: Calculator,
+      title: "Automated Calculations",
+      description: "Generates accurate commission payouts instantly, eliminating manual spreadsheet errors and saving hours of work."
+    },
+    {
       icon: BarChart3,
       title: "Intuitive Dashboards",
       description: "Clean, visual reports that sales reps and finance teams actually want to use, with drill-down capabilities."
+    },
+    {
+      icon: Shield,
+      title: "Audit Trail & Compliance",
+      description: "Complete transparency with detailed audit logs, ensuring compliance and building trust across your organization."
     },
     {
       icon: Zap,
@@ -25,14 +35,12 @@ export const Features = () => {
   ];
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Everything you need to{" "}
-            <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>
+            <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               streamline commissions
             </span>
           </h2>
@@ -41,7 +49,7 @@ export const Features = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={feature.title}
