@@ -17,7 +17,9 @@ export const Hero = () => {
                 
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
-                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">AI-Powered Sales Commission Automation</span>
+                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">AI-Powered</span>{" "}
+                  <span className="text-white">Sales Commission</span>{" "}
+                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Automation</span>
                 </h1>
                 
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">Eliminate spreadsheet chaos and manual errors. Complytics uses AI to parse complex compensation plans, sync real-time Salesforce data, and generate accurate payout reports within seconds.</p>
