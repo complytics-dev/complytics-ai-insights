@@ -38,7 +38,7 @@ const Waitlist = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16">
+      <section className="pt-20 pb-8">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
