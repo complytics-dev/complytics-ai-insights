@@ -21,7 +21,7 @@ export default function RequestDemo() {
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl p-8 border border-border/50">
+          <div className="bg-card rounded-2xl p-6 border border-border/50">
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
