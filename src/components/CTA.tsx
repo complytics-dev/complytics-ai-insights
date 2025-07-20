@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ScrollAnimation } from "@/components/ui/scroll-animation";
+
 export const CTA = () => {
   return (
     <section className="relative py-20 bg-background overflow-hidden">
@@ -11,19 +13,25 @@ export const CTA = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-            Ready to Get Started?
-          </h2>
-          <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
-            Join early users who are already transforming their workflow with our platform.
-          </p>
-          <Button asChild size="lg" className="text-lg px-8 py-6">
-            <Link to="/waitlist">
-              <Sparkles className="mr-2 h-5 w-5" />
-              Join Waitlist
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          <ScrollAnimation>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
+              Ready to Get Started?
+            </h2>
+          </ScrollAnimation>
+          <ScrollAnimation delay={0.2}>
+            <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
+              Join early users who are already transforming their workflow with our platform.
+            </p>
+          </ScrollAnimation>
+          <ScrollAnimation delay={0.3}>
+            <Button asChild size="lg" className="text-lg px-8 py-6">
+              <Link to="/waitlist">
+                <Sparkles className="mr-2 h-5 w-5" />
+                Join Waitlist
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </ScrollAnimation>
         </div>
       </div>
     </section>
