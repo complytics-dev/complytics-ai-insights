@@ -100,9 +100,7 @@ const Waitlist = () => {
               <CardContent className="p-6 text-center">
                 <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Effortless Scaling</h3>
-                <p className="text-muted-foreground">
-                  Onboard new plans and team members in minutes, not months. Complytics adapts instantly as your company grows—no costly consultants or lengthy implementations required.
-                </p>
+                <p className="text-muted-foreground">Onboard new plans and team members in minutes, not months. Complytics adapts instantly as your company grows.</p>
               </CardContent>
             </Card>
           </div>
