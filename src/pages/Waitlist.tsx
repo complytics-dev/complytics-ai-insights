@@ -52,19 +52,19 @@ const Waitlist = () => {
       {/* Waitlist Form */}
       <section className="pb-8">
         <div className="container mx-auto px-4 max-w-6xl">
-          <div className="max-w-xl mx-auto mb-8">
+          <div className="max-w-2xl mx-auto mb-8">
             <Card className="bg-card border-border">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h2 className="text-xl font-bold mb-2">Join the Waitlist</h2>
-                  <p className="text-sm text-muted-foreground">
+              <CardContent className="p-8">
+                <div className="text-center mb-6">
+                  <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
+                  <p className="text-muted-foreground">
                     Get early access, priority onboarding, and exclusive updates.
                   </p>
                 </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-3">
-                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-10" />
-                  <Button type="submit" className="w-full h-10 font-semibold text-lg">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
+                  <Button type="submit" className="w-full h-12 font-semibold text-lg">
                     Reserve My Spot
                   </Button>
                 </form>
@@ -75,32 +75,32 @@ const Waitlist = () => {
           </div>
 
           {/* Benefits Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6 text-center">
-                <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Eliminate Manual Work</h3>
-                <p className="text-muted-foreground">
+              <CardContent className="p-4 text-center">
+                <Zap className="h-10 w-10 text-primary mx-auto mb-3" />
+                <h3 className="text-lg font-semibold mb-2">Eliminate Manual Work</h3>
+                <p className="text-sm text-muted-foreground">
                   No more error-prone spreadsheets. Automated tracking pulls directly from Salesforce.
                 </p>
               </CardContent>
             </Card>
             
             <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6 text-center">
-                <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Real-Time Accuracy</h3>
-                <p className="text-muted-foreground">
+              <CardContent className="p-4 text-center">
+                <Clock className="h-10 w-10 text-primary mx-auto mb-3" />
+                <h3 className="text-lg font-semibold mb-2">Real-Time Accuracy</h3>
+                <p className="text-sm text-muted-foreground">
                   See your commission calculations update instantly with every deal. No waiting until month-end.
                 </p>
               </CardContent>
             </Card>
             
             <Card className="bg-card/50 border-border/50">
-              <CardContent className="p-6 text-center">
-                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Effortless Scaling</h3>
-                <p className="text-muted-foreground">Onboard new plans and team members in minutes, not months. Complytics adapts instantly as your company grows.</p>
+              <CardContent className="p-4 text-center">
+                <TrendingUp className="h-10 w-10 text-primary mx-auto mb-3" />
+                <h3 className="text-lg font-semibold mb-2">Effortless Scaling</h3>
+                <p className="text-sm text-muted-foreground">Onboard new plans and team members in minutes, not months. Complytics adapts instantly as your company grows.</p>
               </CardContent>
             </Card>
           </div>
