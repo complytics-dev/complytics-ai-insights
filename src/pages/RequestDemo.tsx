@@ -9,7 +9,7 @@ import { CheckCircle } from "lucide-react";
 export default function RequestDemo() {
   return <div className="min-h-screen">
       <Navigation />
-      <div className="bg-background pt-24 pb-16">
+      <div className="bg-background pt-24 pb-10">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
