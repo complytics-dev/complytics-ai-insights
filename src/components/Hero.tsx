@@ -17,7 +17,7 @@ export const Hero = () => {
                 
                 
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
-                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>AI-Powered</span>{" "}
+                  <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent animate-[glow-sweep_3s_ease-in-out_infinite]" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>AI-Powered</span>{" "}
                   <span className="text-white">Automated Sales</span>{" "}
                   <span className="text-white">Commissions</span>
                 </h1>
