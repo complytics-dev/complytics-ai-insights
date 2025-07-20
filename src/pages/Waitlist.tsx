@@ -88,10 +88,10 @@ const Waitlist = () => {
             
             <Card className="bg-card/50 border-border/50">
               <CardContent className="p-6 text-center">
-                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Seamless Integration</h3>
+                <Clock className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-3">Real-Time Accuracy</h3>
                 <p className="text-muted-foreground">
-                  Connect with Salesforce and existing tools. No disruption to your current workflow.
+                  See your commission calculations update instantly with every deal. No waiting until month-end.
                 </p>
               </CardContent>
             </Card>
