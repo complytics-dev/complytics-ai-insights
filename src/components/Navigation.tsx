@@ -16,6 +16,8 @@ export const Navigation = () => {
               src="/lovable-uploads/8812b014-90c3-403e-ad17-889ac7a77595.png" 
               alt="Complytics Logo" 
               className="h-16 w-auto flex items-center"
+              width="64"
+              height="64"
             />
           </Link>
 
