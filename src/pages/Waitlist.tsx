@@ -54,7 +54,7 @@ const Waitlist = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="max-w-2xl mx-auto mb-8">
             <Card className="bg-card border-border">
-              <div className="bg-card rounded-2xl p-8 border border-border/50">
+              <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
                   <p className="text-muted-foreground">
@@ -64,14 +64,13 @@ const Waitlist = () => {
                 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <Input type="email" placeholder="Enter your work email" value={email} onChange={e => setEmail(e.target.value)} required className="h-12 text-lg" />
-                  <Button type="submit" className="w-full h-12 font-semibold text-lg group">
+                  <Button type="submit" className="w-full h-12 font-semibold text-lg">
                     Reserve My Spot
-                    <CheckCircle className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                   </Button>
                 </form>
                 
                 
-              </div>
+              </CardContent>
             </Card>
           </div>
 
