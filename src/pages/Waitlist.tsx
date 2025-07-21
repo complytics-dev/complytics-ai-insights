@@ -9,10 +9,11 @@ import { CheckCircle, Clock, Shield, Users, Zap, TrendingUp } from 'lucide-react
 import { ScrollAnimation } from '@/components/ui/scroll-animation';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { submitWaitlistEntry } from '@/integrations/supabase/waitlist';
 
 const Waitlist = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
+    name: '',
     email: '',
     company: '',
     salesReps: '',
@@ -20,11 +21,36 @@ const Waitlist = () => {
     crm: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.email && formData.firstName && formData.company) {
+    setError(null);
+    
+    if (!formData.email || !formData.name || !formData.company) {
+      setError('Please fill in all required fields');
+      return;
+    }
+
+    setIsLoading(true);
+    
+    try {
+      await submitWaitlistEntry({
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        sales_reps: formData.salesReps || null,
+        role: formData.role || null,
+        crm: formData.crm || null
+      });
+      
       setIsSubmitted(true);
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      setError('Failed to submit form. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -88,12 +114,12 @@ const Waitlist = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <Label htmlFor="firstName">Full Name *</Label>
+                        <Label htmlFor="name">Full Name *</Label>
                         <Input 
-                          id="firstName" 
+                          id="name" 
                           placeholder="John Doe" 
-                          value={formData.firstName}
-                          onChange={(e) => handleInputChange('firstName', e.target.value)}
+                          value={formData.name}
+                          onChange={(e) => handleInputChange('name', e.target.value)}
                           required 
                         />
                       </div>
@@ -158,8 +184,18 @@ const Waitlist = () => {
                       </div>
                     </div>
 
-                    <Button type="submit" className="w-full h-12 font-semibold text-lg">
-                      Reserve My Spot
+                    {error && (
+                      <div className="text-red-500 text-sm bg-red-50 p-3 rounded-lg border border-red-200">
+                        {error}
+                      </div>
+                    )}
+                    
+                    <Button 
+                      type="submit" 
+                      className="w-full h-12 font-semibold text-lg"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? 'Submitting...' : 'Reserve My Spot'}
                     </Button>
                   </form>
                   

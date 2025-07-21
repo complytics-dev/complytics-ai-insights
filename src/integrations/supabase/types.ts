@@ -14,7 +14,70 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      waitlist: {
+        Row: {
+          id: string
+          name: string
+          email: string
+          company: string
+          sales_reps: string | null
+          role: string | null
+          crm: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          name: string
+          email: string
+          company: string
+          sales_reps?: string | null
+          role?: string | null
+          crm?: string | null
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          name?: string
+          email?: string
+          company?: string
+          sales_reps?: string | null
+          role?: string | null
+          crm?: string | null
+          created_at?: string
+        }
+      }
+      contacts: {
+        Row: {
+          id: string
+          name: string
+          email: string
+          company: string
+          sales_reps: string | null
+          role: string | null
+          message: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          name: string
+          email: string
+          company: string
+          sales_reps?: string | null
+          role?: string | null
+          message: string
+          created_at?: string
+        }
+        Update: {
+          id?: string
+          name?: string
+          email?: string
+          company?: string
+          sales_reps?: string | null
+          role?: string | null
+          message?: string
+          created_at?: string
+        }
+      }
     }
     Views: {
       [_ in never]: never
