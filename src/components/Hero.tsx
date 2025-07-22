@@ -5,19 +5,19 @@ import heroImage from "@/assets/hero-dashboard.jpg";
 import { ScrollAnimation } from "@/components/ui/scroll-animation";
 
 export const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/20 overflow-hidden px-2 pt-24">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-radial from-primary/10 to-transparent rounded-full blur-3xl"></div>
       
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <div className="container mx-auto px-6 sm:px-8 md:px-12 pt-8 sm:pt-12 md:pt-16 pb-20 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 mx-4 sm:mx-2 md:mx-0 mt-2 sm:mt-4">
               <div className="space-y-6">
                 <ScrollAnimation>
-                  <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
                     <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>AI-Powered</span>{" "}
                     <span className="text-white">Automated Sales</span>{" "}
                     <span className="text-white">Commissions</span>
@@ -52,7 +52,7 @@ export const Hero = () => {
             
             {/* Product mockup */}
             <ScrollAnimation delay={0.4} direction="right">
-              <div className="relative">
+              <div className="relative ml-4 sm:ml-8 lg:ml-12">
                 <div className="relative z-10 transform lg:scale-110">
                   <img src={heroImage} alt="Complytics Dashboard" className="w-full h-auto rounded-2xl shadow-hero border border-border/20" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
