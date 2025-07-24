@@ -92,12 +92,10 @@ const Waitlist = () => {
             </h1>
           </ScrollAnimation>
           <ScrollAnimation delay={0.2}>
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Join 10+ companies who've signed up to modernize their commission process with <span className="text-cyan-400">Complytics</span>, our AI-powered platform that replaces chaotic spreadsheets with real-time, error-free payouts.</p>
+            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Join the waitlist for Complytics, the AI-powered platform that replaces chaotic spreadsheets with real-time, error-free payouts.</p>
           </ScrollAnimation>
         </div>
       </section>
-
-
 
       {/* Waitlist Form */}
       <section className="pb-8">
@@ -107,9 +105,9 @@ const Waitlist = () => {
               <Card className="bg-card border-border">
                 <CardContent className="p-8">
                   <div className="text-center mb-6">
-                    <h2 className="text-2xl font-bold mb-3">Get Early Access</h2>
+                    <h2 className="text-2xl font-bold mb-3">Join the Waitlist</h2>
                     <p className="text-muted-foreground">
-                      Up to 3 months free, direct influence on product, discounted long-term pricing, priority for features + integration.
+                      Get early access, priority onboarding, and exclusive updates.
                     </p>
                   </div>
                   
@@ -202,6 +200,43 @@ const Waitlist = () => {
                   </form>
                   
                   
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
+          </div>
+
+          {/* Benefits Grid */}
+          <div className="grid md:grid-cols-3 gap-6">
+            <ScrollAnimation delay={0.4}>
+              <Card className="bg-card/50 border-border/50 h-full flex flex-col">
+                <CardContent className="p-4 text-center flex flex-col flex-grow">
+                  <Zap className="h-10 w-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-lg font-semibold mb-2">Eliminate Manual Work</h3>
+                  <p className="text-sm text-muted-foreground flex-grow">
+                    No more error-prone spreadsheets. Automated tracking pulls directly from Salesforce.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
+            
+            <ScrollAnimation delay={0.5}>
+              <Card className="bg-card/50 border-border/50 h-full flex flex-col">
+                <CardContent className="p-4 text-center flex flex-col flex-grow">
+                  <Clock className="h-10 w-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-lg font-semibold mb-2">Real-Time Accuracy</h3>
+                  <p className="text-sm text-muted-foreground flex-grow">
+                    See your commission calculations update instantly with every deal. No waiting until month-end.
+                  </p>
+                </CardContent>
+              </Card>
+            </ScrollAnimation>
+            
+            <ScrollAnimation delay={0.6}>
+              <Card className="bg-card/50 border-border/50 h-full flex flex-col">
+                <CardContent className="p-4 text-center flex flex-col flex-grow">
+                  <TrendingUp className="h-10 w-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-lg font-semibold mb-2">Effortless Scaling</h3>
+                  <p className="text-sm text-muted-foreground flex-grow">Onboard new plans and team members in minutes, not months. Complytics adapts instantly as your company grows.</p>
                 </CardContent>
               </Card>
             </ScrollAnimation>

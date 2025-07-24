@@ -13,9 +13,9 @@ export const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/8812b014-90c3-403e-ad17-889ac7a77595.png" 
+              src="/complytics-logo-new.png" 
               alt="Complytics Logo" 
-              className="h-16 w-auto flex items-center"
+              className="h-28 w-auto flex items-center"
             />
           </Link>
 
