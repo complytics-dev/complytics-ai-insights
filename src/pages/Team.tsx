@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: "Rishab Motgi",
     role: "Chief Executive Officer",
-    avatar: "/src/pages/Edits/RishabHeadshot.jpeg",
+    avatar: "/Edits/RishabHeadshot.jpeg",
     initials: "RM",
     social: {
       linkedin: "https://linkedin.com/in/rishab-motgi",
@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "Joshua Thomas",
     role: "Chief Operating Officer",
-    avatar: "/src/pages/Edits/Main.jpeg",
+    avatar: "/Edits/Main.jpeg",
     initials: "JT",
     social: {
       linkedin: "https://linkedin.com/in/joshuathomas06",
@@ -30,7 +30,7 @@ const teamMembers = [
   {
     name: "Abhijit Nambiar",
     role: "Chief Technology Officer",
-    avatar: "/src/pages/Edits/Q62A9944.jpeg",
+    avatar: "/Edits/Q62A9944.jpeg",
     initials: "AN",
     social: {
       linkedin: "https://www.linkedin.com/in/abhijit-nambiar-405800239/",
@@ -41,7 +41,7 @@ const teamMembers = [
   {
     name: "Harsha Kadiyala",
     role: "Chief Financial Officer",
-    avatar: "/src/pages/Edits/Q62A9936.jpeg",
+    avatar: "/Edits/Q62A9936.jpeg",
     initials: "HK",
     social: {
       linkedin: "https://www.linkedin.com/in/sriharsha-kadiyala-abc/",
@@ -51,7 +51,7 @@ const teamMembers = [
   {
     name: "Abhishek Dandekar",
     role: "Chief Product Officer",
-    avatar: "/src/pages/Edits/Q62A9951.jpeg",
+    avatar: "/Edits/Q62A9951.jpeg",
     initials: "AD",
     social: {
       linkedin: "https://www.linkedin.com/in/abhidan/",
@@ -62,7 +62,7 @@ const teamMembers = [
   {
     name: "Jeffrey Gao",
     role: "Vice President of Engineering",
-    avatar: "/src/pages/Edits/Q62A9956.jpg",
+    avatar: "/Edits/Q62A9956.jpg",
     initials: "JG",
     social: {
       linkedin: "https://linkedin.com/in/jeffreygao",
@@ -111,7 +111,7 @@ const Team = () => {
                   modern revenue teams operate.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  There were no tools streamlining the process end to end. So I decided to build one.
+                  There were no tools streamlining the process end to end.
                 </p>
                 <div className="bg-cyan-900/30 rounded-xl p-6 my-8 border-l-4 border-cyan-400">
                   <blockquote className="text-lg italic text-gray-100 mb-4">
