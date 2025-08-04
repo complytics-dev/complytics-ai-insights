@@ -3,11 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const navItems = [
-  { name: "Product", path: "/product" },
-  { name: "Demo", path: "/demo" },
-  { name: "About", path: "/team" }
-];
+
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,23 +45,13 @@ export const Navigation = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`${textStyles} hover:text-primary transition-colors ${
-                  location.pathname === item.path ? "text-primary" : ""
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <Link to="/team">
+              <Button variant="outline" size="sm">
+                About
+              </Button>
+            </Link>
             <Link to="/waitlist">
               <Button variant="outline" size="sm">
                 Join Waitlist
@@ -95,19 +81,12 @@ export const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`${textStyles} hover:text-primary transition-colors ${
-                    location.pathname === item.path ? "text-primary" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
+              <div className="flex flex-col space-y-2">
+                <Link to="/team" onClick={() => setIsMenuOpen(false)}>
+                  <Button variant="outline" className="w-full">
+                    About
+                  </Button>
                 </Link>
-              ))}
-              <div className="flex flex-col space-y-2 pt-4">
                 <Link to="/waitlist" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="outline" className="w-full">
                     Join Waitlist
