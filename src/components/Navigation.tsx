@@ -8,32 +8,9 @@ import { Menu, X } from "lucide-react";
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  
-  // Determine if current page has a light background
-  const isLightPage = location.pathname === "/team";
-  
-  // Dynamic styling based on page background
-  const navStyles = isLightPage 
-    ? "backdrop-blur-sm border-b border-gray-200 shadow-sm"
-    : "bg-background/95 backdrop-blur-sm border-b border-border";
-  
-  const textStyles = isLightPage
-    ? "text-gray-100"
-    : "text-foreground";
-  
-  const mutedTextStyles = isLightPage
-    ? "text-gray-300"
-    : "text-muted-foreground";
-  
-  const logoStyles = isLightPage
-    ? "text-gray-100"
-    : "text-foreground";
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 right-0 z-50 ${navStyles}`}
-      style={isLightPage ? { backgroundColor: '#1C2431' } : {}}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
@@ -70,9 +47,9 @@ export const Navigation = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className={`h-6 w-6 ${textStyles}`} />
+              <X className="h-6 w-6 text-foreground" />
             ) : (
-              <Menu className={`h-6 w-6 ${textStyles}`} />
+              <Menu className="h-6 w-6 text-foreground" />
             )}
           </button>
         </div>

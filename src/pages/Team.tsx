@@ -76,7 +76,7 @@ const Team = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <div className="pt-32 pb-16" style={{ backgroundColor: '#1C2431' }}>
+      <div className="pt-32 pb-16 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="container mx-auto px-6">
           {/* Header Section */}
           <ScrollAnimation className="text-center mb-16">
