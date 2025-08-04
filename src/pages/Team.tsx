@@ -1,9 +1,8 @@
+import React from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollAnimation } from "@/components/ui/scroll-animation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Linkedin, Github, Mail, Globe } from "lucide-react";
 
 const teamMembers = [
