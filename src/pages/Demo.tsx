@@ -85,7 +85,15 @@ const Demo = () => {
                   Watch how Complytics transforms commission tracking from a monthly headache into a real-time competitive advantage.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg">
+                  <Button 
+                    size="lg"
+                    onClick={() => {
+                      document.getElementById('demo-form')?.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                      });
+                    }}
+                  >
                     <Calendar className="mr-2 h-4 w-4" />
                     Schedule Live Demo
                   </Button>
@@ -267,7 +275,7 @@ const Demo = () => {
                 </div>
               </div>
 
-              <div className="bg-card rounded-2xl p-8 border border-border">
+              <div id="demo-form" className="bg-card rounded-2xl p-8 border border-border">
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
@@ -316,24 +324,6 @@ const Demo = () => {
                 </form>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="py-24 bg-gradient-to-br from-primary to-accent">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Empower Your Teams with AI-Driven Commissions
-            </h2>
-            <p className="text-xl text-white/90 mb-8">
-              Book your personalized demo today and discover the future of commission tracking
-            </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90">
-              Book Demo Now
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
         </div>
       </section>

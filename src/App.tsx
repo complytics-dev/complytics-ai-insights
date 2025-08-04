@@ -5,6 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
+import Product from "./pages/Product";
+import Demo from "./pages/Demo";
+import Team from "./pages/Team";
 import ContactUs from "./pages/ContactUs";
 import Waitlist from "./pages/Waitlist";
 import NotFound from "./pages/NotFound";
@@ -20,6 +23,9 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/waitlist" element={<Waitlist />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
@@ -30,4 +36,4 @@ const App = () => (
   </QueryClientProvider>
 );
 
-export default App;
+export default App; 
