@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# Complytics AI Insights
 
-## Project info
+AI-powered commission tracking platform that transforms sales compensation workflows with automated, transparent, and error-free payouts.
 
-**URL**: https://lovable.dev/projects/ff72852d-2b3d-489d-8fac-e007a7058d41
+## Website Overview
 
-## How can I edit this code?
+Complytics is a modern React-based website showcasing an AI commission platform. The site features a clean, professional design with a purplish-blue gradient theme and focuses on explaining how AI can streamline commission processes.
 
-There are several ways of editing your application.
+### Page Structure
 
-**Use Lovable**
+**Main Landing Page (`/`)**
+- **Hero Section**: Main value proposition with animated background dots and gradient effects
+- **How It Works**: 4-card grid explaining the process (Upload → AI Parse → CRM Sync → Dashboards)
+- **Use Cases**: Tabbed interface for different user types (Sales Leaders, Sales Reps, Finance Leads, RevOps)
+- **Features**: Overview of key platform capabilities
+- **Stats Section**: Key metrics and performance indicators
+- **CTA Section**: Call-to-action for demo booking
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ff72852d-2b3d-489d-8fac-e007a7058d41) and start prompting.
+**Additional Pages**
+- **Team (`/team`)**: About us section with team member profiles and company story
+- **Contact Us (`/contact-us`)**: Contact form and information
+- **Waitlist (`/waitlist`)**: Email signup for early access
+- **404 Page**: Custom not found page
 
-Changes made via Lovable will be committed automatically to this repo.
+### Key Features
 
-**Use your preferred IDE**
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Smooth Animations**: Scroll-triggered animations using Framer Motion
+- **Modern UI Components**: Built with shadcn/ui component library
+- **Professional Typography**: Clean, readable font hierarchy
+- **Gradient Themes**: Consistent blue-to-purple gradient styling
+- **Interactive Elements**: Hover effects, form validations, and smooth transitions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technology Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design tokens
+- **Components**: shadcn/ui component library
+- **Build Tool**: Vite
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Backend**: Supabase (for forms and data)
+- **Deployment**: Vercel
 
-Follow these steps:
+## Development Setup
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone <repository-url>
+cd complytics-ai-insights
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Available Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Development server
+npm run dev
 
-**Use GitHub Codespaces**
+# Build for production
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
 
-## What technologies are used for this project?
+# Type checking
+npm run type-check
 
-This project is built with:
+# Linting
+npm run lint
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── Hero.tsx        # Landing page hero section
+│   ├── HowItWorks.tsx  # Process explanation cards
+│   ├── ProductTabs.tsx # Use cases tabbed interface
+│   ├── Features.tsx    # Feature overview
+│   ├── Navigation.tsx  # Header navigation
+│   └── Footer.tsx      # Site footer
+├── pages/              # Page components
+│   ├── Index.tsx       # Main landing page
+│   ├── Team.tsx        # About/team page
+│   ├── ContactUs.tsx   # Contact form page
+│   ├── Waitlist.tsx    # Signup page
+│   └── NotFound.tsx    # 404 page
+├── hooks/              # Custom React hooks
+├── integrations/       # External service integrations
+│   └── supabase/       # Database and forms
+├── lib/                # Utility functions
+└── index.css           # Global styles and design tokens
+```
 
-Simply open [Lovable](https://lovable.dev/projects/ff72852d-2b3d-489d-8fac-e007a7058d41) and click on Share -> Publish.
+## Design System
 
-## Can I connect a custom domain to my Lovable project?
+### Colors
+- **Primary**: Cyan (#00D4E7) - Used for buttons, icons, and accents
+- **Gradients**: Blue to purple gradients for hero sections and highlights
+- **Background**: Subtle gradient with light blues and purples
+- **Text**: Dark foreground with muted secondary text
 
-Yes, you can!
+### Components
+- **Cards**: White backgrounds with subtle shadows and rounded corners
+- **Buttons**: Gradient backgrounds with hover effects
+- **Forms**: Clean inputs with proper validation states
+- **Typography**: Responsive font sizes with proper hierarchy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Contributing
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Create a feature branch from `main`
+2. Make your changes
+3. Test thoroughly on different screen sizes
+4. Submit a pull request with a clear description
+
+## License
+
+Private repository - All rights reserved.
