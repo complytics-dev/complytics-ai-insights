@@ -59,7 +59,7 @@ const Waitlist = () => {
   };
 
   if (isSubmitted) {
-    return <div className="min-h-screen bg-background">
+    return <div className="min-h-screen">
         <Navigation />
         <div className="pt-20 pb-16">
           <div className="container mx-auto px-4 max-w-2xl text-center">
@@ -79,7 +79,7 @@ const Waitlist = () => {
         <Footer />
       </div>;
   }
-  return <div className="min-h-screen bg-background">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
@@ -88,11 +88,11 @@ const Waitlist = () => {
           <ScrollAnimation>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 mt-8">
               End commission confusion.
-              <span className="text-primary block">Start commission clarity.</span>
+              <span className="block">Start commission clarity.</span>
             </h1>
           </ScrollAnimation>
           <ScrollAnimation delay={0.2}>
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Join 10+ companies who've signed up to modernize their commission process with <span className="text-cyan-400">Complytics</span>, our AI-powered platform that replaces chaotic spreadsheets with real-time, error-free payouts.</p>
+            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">Join 10+ companies who've signed up to modernize their commission process with Complytics, our AI-powered platform that replaces chaotic spreadsheets with real-time, error-free payouts.</p>
           </ScrollAnimation>
         </div>
       </section>
@@ -187,7 +187,7 @@ const Waitlist = () => {
                     </div>
 
                     {error && (
-                      <div className="text-red-500 text-sm bg-red-50 p-3 rounded-lg border border-red-200">
+                      <div className="text-red-500 text-sm bg-red-50 dark:bg-red-950/20 p-3 rounded-lg border border-red-200 dark:border-red-800">
                         {error}
                       </div>
                     )}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollAnimation } from "@/components/ui/scroll-animation";
@@ -73,91 +73,87 @@ const teamMembers = [
 ];
 
 const Team = () => {
-  return (
-    <div className="min-h-screen">
-      <Navigation />
-      <div className="pt-32 pb-16 bg-gradient-to-br from-background via-background to-muted/20">
-        <div className="container mx-auto px-6">
-          {/* Header Section */}
-          <ScrollAnimation className="text-center mb-16">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-100">
-              About Complytics
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We're a team of innovators passionate about transforming how businesses approach 
-              AI commissions tracking through intelligent automation and cutting-edge technology.
-            </p>
-          </ScrollAnimation>
+  // Removed dark mode enforcement - now uses system/default theme
 
-          {/* Our Story Section */}
-          <ScrollAnimation delay={0.2} className="mb-16">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8 text-gray-100">Our Story</h2>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  Complytics started with a conversation.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  My manager, the Controller at a 250-person B2B SaaS company, told me she was manually calculating 
-                  commissions every single month. She had to pull data from Salesforce, rebuild logic in Excel, 
-                  verify every payout, and respond to rep questions all by herself.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  Then she passed the responsibility to me.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  What I expected to be a simple process turned out to be a mess. I saw firsthand how frustrating 
-                  and fragile the system really was: slow, error-prone, and completely disconnected from how 
-                  modern revenue teams operate.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  There were no tools streamlining the process end to end.
-                </p>
-                <div className="bg-cyan-900/30 rounded-xl p-6 my-8 border-l-4 border-cyan-400">
-                  <blockquote className="text-lg italic text-gray-100 mb-4">
-                    "Hearing that someone responsible for company-wide financial accuracy was stuck doing this 
-                    manually just didn't sit right with me. There were no tools built to solve the full problem. 
-                    So I decided to build one."
-                  </blockquote>
-                  <p className="font-semibold text-gray-100">— Rishab Motgi, Co-founder and CEO</p>
-                </div>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  That handoff became the spark. I pulled together a team of builders I trusted from engineers 
-                  to operators and we got to work. We didn't want to patch one part of the process. We wanted 
-                  to fix the whole thing.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                  Complytics is the first AI-powered platform built to handle sales compensation end to end. 
-                  From parsing comp plan PDFs, to modeling payout logic, validating deals, syncing with Salesforce, 
-                  and delivering real-time visibility to reps and finance—Complytics replaces spreadsheets with clarity.
-                </p>
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  We're a young team solving an old problem with speed, precision, and urgency.
-                </p>
-              </div>
+  return (
+    <div className="min-h-screen bg-gray-900">
+      <Navigation />
+      <div className="pt-32 pb-16">
+        <div className="container mx-auto px-6">
+          {/* About Us Section */}
+          <ScrollAnimation className="mb-32">
+            <div className="max-w-6xl mx-auto">
+              <h1 className="text-5xl lg:text-7xl font-bold mb-8 text-white">
+                About Us
+              </h1>
+              <p className="text-xl lg:text-2xl leading-relaxed max-w-4xl text-gray-300">
+                We're a team of innovators passionate about transforming how businesses tackle 
+                commissions tracking with a novel approach. We hope to eliminate spreadsheet chaos and bring transparency and efficiency to sales compensation.
+              </p>
             </div>
           </ScrollAnimation>
 
-          {/* Mission Statement */}
-          <ScrollAnimation delay={0.3} className="mb-16">
-            <div className="bg-cyan-900/30 backdrop-blur-sm rounded-2xl p-8 border border-cyan-700">
-              <h2 className="text-2xl font-bold mb-4 text-center text-gray-100">Our Mission</h2>
-              <p className="text-lg text-gray-300 text-center max-w-4xl mx-auto">
-                At Complytics, our mission is to empower SaaS enterprises to drive revenue growth through precise, 
-                transparent, and scalable sales compensation workflows. From plan implementation to payout execution, 
-                our AI-native platform is built to automate, validate, and compensate, turning compensation into a 
-                strategic growth driver.
-              </p>
+          {/* Connected Story & Vision Section */}
+          <ScrollAnimation delay={0.2} className="mb-32">
+            <div className="max-w-7xl mx-auto bg-white/95 rounded-3xl shadow-2xl overflow-hidden">
+              <div className="grid lg:grid-cols-2 min-h-[600px]">
+                {/* Our Story - Left Top */}
+                <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-8 flex items-center justify-center border-r border-gray-300 border-b">
+                  <div className="text-center">
+                    <h3 className="text-4xl font-bold text-white mb-4">Our Story</h3>
+                    <div className="w-16 h-1 bg-white/60 mx-auto"></div>
+                  </div>
+                </div>
+                
+                {/* Story Content - Right Top */}
+                <div className="p-8 border-b border-gray-300">
+                  <div className="space-y-6">
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      Complytics started when I was the one grinding through commission spreadsheets. It hit me that the problem wasn't the math, it was the process: comp plans are written like legal documents, but we were forcing them into spreadsheets that do not scale.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      I got tired of tedious work, so I built Complytics to solve it the right way, automating the whole thing from plan to payout. Our platform uses AI to parse complex compensation plans and sync real-time data, ensuring accuracy and transparency.
+                    </p>
+                    <div className="pt-6 border-t border-gray-300">
+                      <p className="font-semibold text-gray-900 text-lg">— Rishab Motgi</p>
+                      <p className="text-gray-600">Co-founder and CEO</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Vision Content - Left Bottom */}
+                <div className="p-8 border-r border-gray-300">
+                  <div className="space-y-6">
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      We're building the future where commission calculations happen 
+                      in seconds, not hours, and where every sales rep trusts their payout completely.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      At the end of the day, commissions should not be a headache but rather a motivator. We hope to create a product that saves people time and give sales teams the confidence they need to focus on what they do best: selling.
+                    </p>
+                  </div>
+                </div>
+                
+                {/* Our Vision - Right Bottom */}
+                <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-8 flex items-center justify-center">
+                  <div className="text-center">
+                    <h3 className="text-4xl font-bold text-white mb-4">Our Mission</h3>
+                    <div className="w-16 h-1 bg-white/60 mx-auto"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </ScrollAnimation>
 
           {/* Meet the Team Section */}
           <ScrollAnimation delay={0.4} className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Meet Our Team</h2>
+            <h2 className="text-4xl font-bold mb-12 text-white">
+              Meet Our Team
+            </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {teamMembers.map((member, index) => (
               <ScrollAnimation key={member.name} delay={0.1 * index}>
-                                <Card className="h-full bg-white/15 backdrop-blur-sm border-gray-600/50 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex flex-col group">
+                                <Card className="h-full bg-gray-800/60 backdrop-blur-sm border-gray-700 rounded-3xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex flex-col group">
                   <CardHeader className="text-center flex-shrink-0 pb-8">
                     <div className="flex justify-center mb-6">
                       <div className="h-72 w-72 rounded-xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
@@ -168,8 +164,8 @@ const Team = () => {
                         />
                       </div>
                     </div>
-                    <CardTitle className="text-2xl font-bold text-gray-100 mb-2">{member.name}</CardTitle>
-                    <CardDescription className="text-cyan-400 font-medium text-lg">
+                    <CardTitle className="text-2xl font-bold text-white mb-2">{member.name}</CardTitle>
+                    <CardDescription className="text-gray-400 font-medium text-lg">
                       {member.role}
                     </CardDescription>
                   </CardHeader>
@@ -180,7 +176,7 @@ const Team = () => {
                           href={member.social.linkedin} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-cyan-400 hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-gray-800/50"
+                          className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-muted"
                         >
                           <Linkedin className="h-5 w-5" />
                         </a>
@@ -190,7 +186,7 @@ const Team = () => {
                           href={member.social.github} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-cyan-400 hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-gray-800/50"
+                          className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-muted"
                         >
                           <Github className="h-5 w-5" />
                         </a>
@@ -198,7 +194,7 @@ const Team = () => {
                       {member.social.email && (
                         <a 
                           href={`mailto:${member.social.email}`}
-                          className="text-gray-400 hover:text-cyan-400 hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-gray-800/50"
+                          className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-muted"
                         >
                           <Mail className="h-5 w-5" />
                         </a>
@@ -208,7 +204,7 @@ const Team = () => {
                           href={(member.social as any).website} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-cyan-400 hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-gray-800/50"
+                          className="text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-200 p-2 rounded-full hover:bg-muted"
                         >
                           <Globe className="h-5 w-5" />
                         </a>

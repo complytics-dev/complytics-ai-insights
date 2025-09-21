@@ -5,7 +5,7 @@ import { ScrollAnimation } from "@/components/ui/scroll-animation";
 
 export const CTA = () => {
   return (
-    <section className="relative py-20 bg-background overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       
@@ -19,17 +19,17 @@ export const CTA = () => {
             </h2>
           </ScrollAnimation>
           <ScrollAnimation delay={0.2}>
-            <p className="text-lg text-white mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Join early users who are already transforming their workflow with our platform.
             </p>
           </ScrollAnimation>
           <ScrollAnimation delay={0.3}>
             <Button asChild size="lg" className="text-lg px-8 py-6">
-              <Link to="/waitlist">
+              <a href="https://calendly.com/rishab-motgi-complytics/complytics-discovery-call?back=1&month=2025-09" target="_blank" rel="noopener noreferrer">
                 <Sparkles className="mr-2 h-5 w-5" />
-                Join Waitlist
+                Book a Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </ScrollAnimation>
         </div>

@@ -58,7 +58,7 @@ export default function ContactUs() {
   };
 
   if (isSubmitted) {
-    return <div className="min-h-screen bg-background">
+    return <div className="min-h-screen">
         <Navigation />
         <div className="pt-20 pb-16">
           <div className="container mx-auto px-4 max-w-2xl text-center">
@@ -79,7 +79,7 @@ export default function ContactUs() {
 
   return <div className="min-h-screen">
       <Navigation />
-      <div className="bg-background pt-24 pb-10">
+      <div className="pt-24 pb-10">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
           <ScrollAnimation className="text-center mb-12">
@@ -166,7 +166,7 @@ export default function ContactUs() {
                 </div>
 
                 {error && (
-                  <div className="text-red-500 text-sm bg-red-50 p-3 rounded-lg border border-red-200">
+                  <div className="text-red-500 text-sm bg-red-50 dark:bg-red-950/20 p-3 rounded-lg border border-red-200 dark:border-red-800">
                     {error}
                   </div>
                 )}

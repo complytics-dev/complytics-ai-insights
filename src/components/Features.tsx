@@ -26,7 +26,7 @@ export const Features = () => {
   ];
 
   return (
-    <section className="pt-24 pb-16 bg-background relative overflow-hidden">
+    <section className="pt-24 pb-16 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="container mx-auto px-6">
@@ -34,7 +34,7 @@ export const Features = () => {
           <ScrollAnimation>
             <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Everything you need to{" "}
-              <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style={{textShadow: '0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.4)'}}>
+              <span className="text-gradient bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 streamline commissions
               </span>
             </h2>
